@@ -1,10 +1,10 @@
 import random
 
-winning_numbers = set()
-while winning_numbers <
+winning_numbers = []
+
 for i in range(1,8):
     randno = random.randint(1,55)
-    winning_numbers.add(randno)
+    winning_numbers.append(randno)
 print(winning_numbers)
 
 matches = 0
