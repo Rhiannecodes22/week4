@@ -1,8 +1,7 @@
 import random
 
-<<<<<<< HEAD
 start_game = input('Would you like to start the game? y/n  ')
-=======
+
 winning_numbers = []
 
 for i in range(1,8):
