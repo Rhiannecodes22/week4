@@ -13,14 +13,13 @@ while start_game == 'y':
         choice = input('Enter your 6 numbers here, separated by a comma   ')
         choice_set = set(map(int, choice.split(',')))
 
-        # Count number of matches in lists/sets
+        # Count number of matches in two sets
         if len(choice_set) == 6 and 0 < min(choice_set) and max(choice_set) <= 50:
             matches = 0
             for numbers in choice_set:
                 if numbers in winning_numbers:
                     matches += 1
-            print('Your lottery numbers are... {}.\n'
-                  'The winning numbers are ... {}\n'
+            print('Your lottery numbers are... {}.\nThe winning numbers are ... {}\n'
                   'You have matched {} numbers! Thank you for playing'
                   .format(sorted(choice_set), sorted(winning_numbers), matches))                # sorted returns a sorted sequence or collection the form of a list
 
