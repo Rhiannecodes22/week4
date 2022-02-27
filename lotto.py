@@ -2,14 +2,6 @@ import random
 
 start_game = input('Would you like to start the game? y/n  ')
 
-winning_numbers = []
-
-for i in range(1,8):
-    randno = random.randint(1,55)
-    winning_numbers.append(randno)
-print(winning_numbers)
->>>>>>> master
-
 while start_game == 'y':
     try:
         # Random set of numbers is generated. Set is used to overcome duplicates
@@ -33,7 +25,6 @@ while start_game == 'y':
 
         else:
             print('you must enter 6 unique numbers from 1 to 50')
-
 
     except ValueError:
         print('Please enter a list of 6 valid numbers to continue')
