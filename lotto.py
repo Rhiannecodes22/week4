@@ -29,7 +29,8 @@ while start_game == 'y':
                     matches += 1
             print('Your lottery numbers are... {}.\nThe winning numbers are ... {}\n'
                   'You have matched {} numbers! Thank you for playing'
-                  .format(sorted(choice_set), sorted(winning_numbers), matches))                # sorted returns a sorted sequence or collection the form of a list
+                  .format(sorted(choice_set), sorted(winning_numbers), matches))
+                    # sorted returns a sorted sequence or collection the form of a list
 
         else:
             print('you must enter 6 unique numbers from 1 to 50')
