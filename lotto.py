@@ -4,7 +4,7 @@ start_game = input('Would you like to start the game? y/n  ')
 
 while start_game == 'y':
     try:
-        # Random set of numbers is generated. Set is used to overcome duplicates
+        # Random set of numbers is generated. Set is used to overcome duplicate values
         winning_numbers = set()
         while len(winning_numbers) < 6:
             winning_numbers.add(random.randint(1, 50))
